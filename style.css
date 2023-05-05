@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color: rgb(100, 100, 100);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+/* Nav bar */
+nav{
+    top:0;
+    position:sticky;
+    display: flex;
+    padding: 10px;
+    width: 100vw;
+    background-color:white;
+}
+#navLogo{
+    height:100px;
+    width: auto;
+    transition: 0.5s;
+}
+#navLogo:hover{
+    background-color: orangered;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100vw;
+    margin-right: 20px;
+}
+#navLink{
+    font-size: 25px;
+    padding: 20px;
+    color:black;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+}
+#navLink:hover{
+    background-color: orangered;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+/* Form/Header */
+header{
+    display: grid;
+    justify-content: center;
+}
+form{
+    text-align: center;
+}
+form > input{
+    width:300px; 
+    height:30px; 
+    padding:5px;
+}
+/* Product descriptions */
+.prodDesc{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+#desc{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    width: 100vw;
+}
+#descText{
+    font-size: 1.25rem;
+    padding: 10px;
+}
+#descImg{
+    width: 200px;
+    height: auto;
+}
+/* Embeded YT video */
+.ytVid{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* Responsive */
+@media screen and (max-width:700px){
+    nav{flex-direction: column;}
+    .navLinks{flex-direction: row;}
+    #navLink{font-size: smaller;}
+    #descText{font-size: smaller;}
+    #descImg{width:100px; height: auto;}
+    #ytVid{width:300px; height: auto;}
+    footer{height: 10vh;}
+}
